@@ -8,3 +8,5 @@
 https://github.com/tholman/zenpen
 
 오른쪽의 녹색 바는 목표단어 수 만큼 얼마나 채웠는지 나타내는 진행률 바입니다.
+
+저장은 브라우저내의 Local Storage에 저장됩니다.
