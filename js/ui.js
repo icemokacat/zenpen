@@ -349,7 +349,7 @@ ZenPen.ui = (function() {
 		
 		overlay.style.display = "none";
 		wordCountBox.style.display = "none";
-		descriptionModal.style.display = "none";
+		// descriptionModal.style.display = "none";
 		saveModal.style.display = "none";
 		
 		if ( document.querySelectorAll('span.activesave' ).length > 0) {
