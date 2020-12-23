@@ -1,20 +1,10 @@
-## ZenPen - A minimalist writing zone.
+#Zenpen#
 
-Zenpen (http://zenpen.io) is a web app for writing minimally, and getting into the Zone.
 
-All information is persistent locally, using HTML5 local storage.
+웹에서 글쓰기를 할 수 있고 글쓴 내용을 마크업 문서, html로 다운받을 수 있습니다.
 
-### ZenPen's minimal interface
-![ZenPen](https://i.imgur.com/uP8Ensx.png)
+원본 소스의 출처는 아래와 같습니다.
 
-### Text styling
-![Text Styling](https://i.imgur.com/J8T88O7.png)
+https://github.com/tholman/zenpen
 
-### Saving
-![Saving](https://i.imgur.com/TkXX4aI.png)
-
-### License
-
-The MIT License
-
-Copyright (C) 2016 ~ [Tim Holman](http://tholman.com) ~ timothy.w.holman@gmail.com
+오른쪽의 녹색 바는 목표단어 수 만큼 얼마나 채웠는지 나타내는 진행률 바입니다.
