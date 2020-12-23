@@ -156,7 +156,7 @@ ZenPen.ui = (function() {
 	}
 
 	function saveText( event ) {
-
+		
 		if (typeof saveFormat != 'undefined' && saveFormat != '') {
 			var blob = new Blob([textToWrite], {type: "text/plain;charset=utf-8"});
 			/* remove tabs and line breaks from header */
@@ -164,7 +164,13 @@ ZenPen.ui = (function() {
 			if (headerText === "") {
 			    headerText = "ZenPen";
 			}
-			saveAs(blob, headerText + '.txt');
+
+			var ext = '.txt';
+			if('markdown' === saveFormat){
+				ext = '.md';
+			}
+
+			saveAs(blob, headerText + ext);
 		} else {
 			document.querySelector('.saveoverlay h1').style.color = '#FC1E1E';
 		}
@@ -287,7 +293,7 @@ ZenPen.ui = (function() {
 			case 'markdown':
 				header = header.replace(/\t/g, '');
 				header = header.replace(/\n$/, '');
-				header = "#" + header + "#";
+				header = "## " + header;
 			
 				text = body.replace(/\t/g, '');
 			
